@@ -1,0 +1,47 @@
+:root {
+  --color-default: #fff;
+}
+@media (prefers-color-scheme: dark){
+
+    :root {
+    
+	     --color-default: #ffffff;
+       color: #252b30
+       
+    }
+
+    select{
+      
+       color: #000000;
+    }
+    .dropdown li{
+       color: #000000;
+    }
+ 
+
+ 
+}
+[data-theme='dark'] {
+  --color-default: #252b30;
+  color:#ffffff;
+  
+}
+
+[data-theme='light'] {
+  --color-default: #ffffff;
+  color:#252b30;
+}
+
+[data-theme='pink'] {
+  --color-default: #ffabc8;
+}
+[data-theme='blue'] {
+  --color-default: #7ec6ff;
+    color:#252b30;
+}
+[data-theme='yellow'] {
+  --color-default: #ffd65a;
+}
+body {
+	background-color: var(--color-default);
+}
